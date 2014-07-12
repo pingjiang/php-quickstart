@@ -1,0 +1,57 @@
+{
+    "name": "pingjiang/php-quickstart",
+    "description": "PHP quickstart project using composer manage dependencies and tests.",
+    "keywords": ["PHP", "Quickstart", "Composer", "PHPUnit"],
+    "homepage": "https://www.github.com/pingjiang/php-quickstart",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.1.*"
+    },
+    "authors": [
+        {
+            "name": "pingjiang",
+            "email": "pingjiang1989@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {"APP": "src/"},
+        "classmap": [
+            "src/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-0": {"APP": "src/", "APP\\Tests": "tests/"},
+        "classmap": [
+            "src/", "tests/"
+        ]
+    },
+    "include-path": ["src/"],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "pingjiang/php-quickstart",
+                "version": "1.0.0",
+                "source": {
+                    "url": "https://www.github.com/pingjiang/php-quickstart.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "autoload": {
+                    "classmap": [
+                        "src/"
+                    ]
+                }
+            }
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
