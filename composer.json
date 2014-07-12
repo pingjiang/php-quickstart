@@ -3,7 +3,7 @@
     "description": "PHP quickstart project using composer manage dependencies and tests.",
     "keywords": ["PHP", "Quickstart", "Composer", "PHPUnit"],
     "homepage": "https://github.com/pingjiang/php-quickstart",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "license": "MIT",
     "require": {
         "php": ">=5.3.3"
@@ -24,12 +24,11 @@
         ]
     },
     "autoload-dev": {
-        "psr-0": {"APP": "src/", "APP\\Tests": "tests/"},
+        "psr-0": {"APP\\Tests": "tests/"},
         "classmap": [
-            "src/", "tests/"
+            "tests/"
         ]
     },
-    "include-path": ["src/"],
     "repositories": [
         {
             "type": "package",
